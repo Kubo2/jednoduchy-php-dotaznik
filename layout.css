@@ -1,0 +1,83 @@
+/**
+ * Toto je jednoduchý štýl/rozvrhnutie stránky 
+ * pre Coompiikov dotazník :: project(coompiikov-dotaznik/).
+ *
+*/
+
+table th,
+table td {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	padding: 3.2px 2px;
+}
+
+table th {
+	text-align: right;
+	text-decoration: none;
+	font-style: italic;
+}
+
+table {
+	border: none;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+}
+
+p.error {
+	font-weight: bold;
+	color: red;
+	width: 100%;
+	text-align: center;
+}
+
+table td > input:not([type=submit]) {
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	transition-duration: 1s;
+	transition-property: background;
+	vymyslena-vlastnost: hodnota;
+}
+
+table td > input[type=radio] {
+	outline: initial;
+	border: initial;
+	width: initial;
+	height: initial;
+}
+
+table td > input[type=submit] {
+	background: #eee;
+	border: none;
+	outline: 1px solid #ddd;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	cursor: hand;
+	transition-property: outline;
+	transition-duration: .9s;
+}
+
+table td > input[type=submit]:hover {
+	outline: 1.4px solid #000;
+}
+
+table > tfoot :first-child:first-child {
+	padding: 0;
+}
+
+table td > input:not([type=submit]):focus,
+table td > input:not([type=submit]):hover {
+	background: #efefef;
+}
+
+table td > input:not([type=submit]):focus {
+	cursor: text;
+}
